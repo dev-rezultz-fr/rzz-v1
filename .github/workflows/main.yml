@@ -47,6 +47,6 @@ jobs:
           # An array of glob patterns, these files will not be included in the publish/delete process
           #exclude: # optional
           # How verbose should the information be - warn, info, debug
-          log-level: debug
+          log-level: verbose
           # strict or loose
           #security: # optional
