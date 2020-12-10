@@ -13,7 +13,7 @@
 
     <main>
     <?php
-      echo 'RZZ v1 - (c) ReZultZ.fr - 2014';
+      echo 'RZZ v1 - (c) ReZultZ.fr - 2014 - FIFA WC';
     ?>
     </main>
   </body>
