@@ -1,0 +1,65 @@
+/* Propriétés globales des liens */
+a:visited{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
+a:link{
+	text-decoration: none;
+}
+a img { 
+	border: none; 
+}
+
+/* Lien index du site */
+a.entete {
+	color: #FFFFFF;
+}
+
+/* Menu supérieur */
+a.top_nav{
+	float:right;
+	margin-right:5px;
+	margin-top:5px;
+	z-index: 99;
+}
+
+/* Raccourcis sur page d'index */
+div.shortcut{
+	float: left;
+	height: 100px;
+	width: 35%;
+	margin-left: 10%;
+	margin-bottom: 30px;
+	line-height:100px;
+}
+div.shortcut a{
+	border: 1px #eeeeee solid;
+	background: #eeeeee;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	right: 0;
+	height: 100%;
+	display: block;
+	padding-left:60px;
+	vertical-align:middle;
+	background-repeat: no-repeat;
+	background-position: 10px,10px,0,0;
+	line-height:normal;
+	color: green;
+}
+div.shortcut a:hover {
+	text-decoration: none;
+	border: 1px #cccccc solid;
+	background: #cccccc;
+	background-repeat: no-repeat;
+	background-position: 10px,10px,0,0;
+}

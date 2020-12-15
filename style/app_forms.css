@@ -1,0 +1,80 @@
+/*les formulaires*/
+select {
+    background-color:#FFFFFF;
+    border: 1px solid #eeeeee;
+}
+
+input.promote {
+	margin: auto;
+	margin-top: 10px;
+	width: 200px;
+}
+
+input.submit{
+	margin-top:4px;
+	margin-right:4px;
+	float:left;
+}
+
+label.login{
+	width: 40%;
+	float: right;
+	text-align:left;
+	padding-left:10px;
+	height: 20px;
+	padding-top: 6px;
+	font-style:italic;
+}
+
+input.marks{
+	color:white;
+	background-color:rgb(92,73,73);
+	font-family:radioland;
+	font-weight:bold;
+	border : 0px;
+	margin: 0;
+	padding: 0;
+	float:right;
+	width:100%;
+	text-align: right;
+}
+
+input.login, input.submit_login {
+	font-size:16px;
+	display: block;
+    border: 1px solid #FFFFFF;
+	color : #234D7F;
+	height: 20px;
+	width: 150px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-left: 100px;
+	margin-top: 26px;
+	text-align : center;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.submit,input.promote,input.submit_login{
+    background-image: linear-gradient(to bottom,#407CC9 0,#234D7F 90%);
+	text-align : center;
+    border: 1px solid #234D7F;
+	color : #FFFFFF;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	height: 20px;
+	display: block;
+}
+
+input.submit_login {
+	height: 32px;
+	width: 200px;
+}

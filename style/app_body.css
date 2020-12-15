@@ -1,0 +1,289 @@
+/* Structure globale : fenêtre*/
+body{
+	font-family:Verdana, Calibri, Arial;
+	font-size:13px;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	scrollbar-face-color: #234D7F;
+	scrollbar-highlight-color: #234D7F;
+	scrollbar-3dlight-color: #234D7F;
+	scrollbar-darkshadow-color: #234D7F;
+	scrollbar-shadow-color: #234D7F;
+	scrollbar-arrow-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+}
+
+/* Structure globale : principal*/
+#main{
+	margin : 0;
+}
+
+/* Structure globale : entête (panneaux latéraux) et menus navigation */
+header.left{
+	/*border: 1px black dashed;*/
+	/*background-image: linear-gradient(to bottom,#407CC9 0,#234D7F 90%);*/
+	background-color: #407CC9;/*rgb(94, 136, 243);*/
+	position : absolute;
+	top : 0;
+	left : 0;
+	bottom : 0;
+	width : 100px;
+	height : auto;
+	vertical-align : middle;
+	z-index : 99;
+}
+
+header.right{
+	/*border: 1px black dashed;*/
+	/*background-image: linear-gradient(to bottom,#407CC9 0,#234D7F 90%);*/
+	background-color: #407CC9;/*rgb(94, 136, 243);*/
+	position : absolute;
+	top : 0;
+	right : 0;
+	bottom : 0;
+	width : 100px;
+	height : auto;
+	vertical-align : middle;
+	z-index : 99;
+	padding-top : 25px;
+}
+
+nav{
+	width : 80%;
+	text-align : center;
+	vertical-align : middle;
+	margin-bottom : 100px;
+	padding-top : 10px;
+	padding-bottom : 10px;
+}
+
+nav.offleft{
+	margin-left : 20%;
+	border : 1px solid transparent;
+}
+
+nav.offright{
+	margin-right : 20%;
+	border : 1px solid transparent;
+}
+
+nav.onleft{
+	margin-left : 20%;
+	background-color : white;
+	border : 1px solid white;
+	border-radius : 15px 0px 0px 15px;
+}
+
+nav.onright{
+	margin-right : 20%;
+	background-color : white;
+	border : 1px solid white;
+	border-radius : 0px 15px 15px 0px;
+}
+
+nav ul{
+	margin : 0px;
+	list-style-type: none;
+}
+
+nav li{
+	margin : 0px;
+}
+
+/* Structure globale : Titre d'entête */
+#header_title{
+	width : 100%;
+	text-align : center;
+	vertical-align : middle;
+	font-size:20px;
+	font-weight : bold;
+	font-style : italic;
+	margin-bottom : 100px;
+	padding-top : 10px;
+}
+
+#top{
+	position : absolute;
+	left : 100px;
+	right : 100px;
+	top : 0;
+	width : auto;
+	height : 100px;
+	vertical-align : middle;
+	text-align: left;
+}
+
+/* Structure globale : Zone de contenu - corps de page */
+#content{
+	margin : auto;
+	padding : 10px;
+	position : absolute;
+	left : 100px;
+	right : 100px;
+	top : 100px;
+	bottom : 30px;
+	width : auto;
+	height : auto;
+	text-align: left;
+	overflow-y : scroll;
+	overflow-x : hidden;
+	scrollbar-face-color: #234D7F;
+	scrollbar-highlight-color: #234D7F;
+	scrollbar-3dlight-color: #234D7F;
+	scrollbar-darkshadow-color: #234D7F;
+	scrollbar-shadow-color: #234D7F;
+	scrollbar-arrow-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+}
+
+h1{
+	display : block;
+	font-size: 16px;
+	color: #407CC9;
+	padding-left:15px;
+}
+
+h2{
+	display : block;
+	margin: 0;
+	margin-bottom: 0;
+	padding: 5px;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: bold;
+	color: green;
+	border: 1px #eeeeee solid;
+	background: #eeeeee;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+}
+
+h2.commut{
+	cursor: pointer;
+}
+
+h3{
+	display : block;
+	font-size: 16px;
+	color: #407CC9;
+}
+
+#message{
+	border: 1px red dashed;
+	background: rgb(242,220,219);
+	line-height: 40px;
+	height: 40px;
+	width: 45%;
+	position: absolute;
+	top: -8px;
+	left: 405px;
+	padding-left: 60px;
+	padding-right: 5px;
+	text-align: left;
+	z-index: 98;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-position: 10px,10px,0,0;
+	background-image: url('../img/info.png');
+}
+
+#connection{
+	display: block;
+	height: 200px;
+	width: 400px;
+    position:absolute;
+    left:50%;
+    margin-left:-200px;
+	text-align: center;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px #eeeeee solid;
+	background: #eeeeee;
+}
+
+#subscribe{
+	display: block;
+	min-height: 200px;
+	width: 50%;
+    margin-left:25%;
+	text-align: center;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px #eeeeee solid;
+	background: #eeeeee;
+	padding-bottom: 26px;
+}
+
+div.bloc{
+	margin : 20px;
+	padding : 0;
+	border: 1px #eeeeee solid;
+	overflow:hidden;
+	padding-bottom:0px;
+}
+
+div.ubloc{
+	margin : 5px;
+}
+
+.sports{
+	background-image: url('../img/sports.png');
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	margin-left:5px;
+	padding-left:5px;
+	float: left;
+}
+
+/* Structure globale : Pied de page */
+#footer{
+	position : absolute;
+	left : 100px;
+	right : 100px;
+	bottom : 0;
+	width : 100%;
+	height : 30px;
+	color :  #FFFFFF;
+	vertical-align : middle;
+}
+
+#foot{
+	vertical-align : middle;
+}
+
+/* Propriétés des objets déplaçables de tout le site */
+[draggable=true]{
+	cursor: move;
+}
+
+/* Propriétés d'apparence des scrollbars de tout le site */
+::-webkit-scrollbar { 
+	width: 5px; /*largeur de la scrollbar verticale*/
+	height: 5px; /*hauteur de la scrollbar horizontale*/
+	background-color: #407CC9;
+}
+
+::-webkit-scrollbar-track { 
+	background-color: #FFFFFF; /*couleur du fond de la scrollbar*/
+}
+
+::-webkit-scrollbar-thumb { /*la petite bande qui monte/descend*/
+	background-color: #234D7F; /*couleur de l'ascenseur*/
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}

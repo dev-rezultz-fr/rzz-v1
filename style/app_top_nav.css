@@ -1,0 +1,78 @@
+#trnsel /* Ensemble du trnsel */
+{
+	display: block;
+	font-weight : bold; /* on met le texte en gras */
+	font-family : Arial; /* on utilise Arial */
+	font-size : 16px; /* hauteur du texte : 12 pixels */
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 99;
+}
+
+#trnsel a:hover /* Lorsque la souris passe sur un des liens */    
+{
+	color: #234D7F; /* On passe le texte en noir... */
+	box-shadow:0 0 5px green; /* CSS3 */
+	background: #fff; /* ... et au contraire, le fond en blanc */
+}
+
+#trnsel, #trnsel ul /* Liste */     
+{
+	padding : 0; /* pas de marge int�rieure */
+	margin: 0;
+	list-style : none; /* on supprime le style par d�faut de la liste */
+	line-height : 40px; /* on d�finit une hauteur pour chaque �l�ment */
+	text-align : left; /* on centre le texte qui se trouve dans la liste */
+}
+
+#trnsel .comment{
+	padding-right:5px;
+	float:right;
+	font-size:12px;
+	font-style:italic;
+}
+
+#trnsel a /* Contenu des listes */
+{
+	display : block; /* on change le type d'�l�ment, les liens deviennent des balises de type block */
+	padding : 0; /* aucune marge int�rieure */
+	padding-left:0px;
+	background : #fff; /* couleur de fond */        
+	color : #234D7F; /* couleur du texte */
+	text-decoration : none; /* on supprime le style par d�faut des liens (la plupart du temps = soulign�) */
+	width : 380px; /* largeur */
+	border : 1px solid #407CC9;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+#trnsel li /* Elements des listes */ 
+{ 
+	float : left; /* pour IE qui ne reconna�t pas "transparent" */
+	border-right: 1px solid transparent ; /* on met une bordure transparente � droite de chaque �l�ment */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+}
+
+#trnsel li ul /* Sous-listes */
+{ 
+	position: absolute; /* Position absolue */
+	width: 90px; /* Largeur des sous-listes */
+	left: -999em; /* on envoie loin du champ de vision */
+}
+
+#trnsel li ul li /* �l�ments de sous-listes */
+{
+	border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque �l�ment */
+}
+
+#trnsel li:hover ul, #trnsel li.sfhover ul /* Sous-listes lorsque la souris passe sur un �l�ment de liste ET sous-sous-lites lorsque la souris passe sur un �l�ment de sous-liste */
+{
+	left: auto; /* Repositionnement normal */
+	min-height: 0; /* Corrige un bug sous IE */
+}

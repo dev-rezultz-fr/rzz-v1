@@ -1,0 +1,106 @@
+/* Propri�t�s d'affichage du menu secondaire en onglet (id=menu) */
+#menu /* Ensemble du menu */
+{
+	margin : 20px;
+	display: inline-block;
+    font-weight : bold; /* on met le texte en gras */
+    font-family : Arial; /* on utilise Arial */
+    font-size : 12px; /* hauteur du texte : 12 pixels */
+}
+
+	#menu, #menu ul /* Liste */     
+	{
+		padding : 0; /* pas de marge int�rieure */
+		margin : 0; /* ni ext�rieure */
+		list-style : none; /* on supprime le style par d�faut de la liste */
+		line-height : 20px; /* on d�finit une hauteur pour chaque �l�ment */
+		text-align : center; /* on centre le texte qui se trouve dans la liste */
+		border-bottom: 1px solid #234D7F;
+	}
+
+		#menu li /* Elements des listes */      
+		{ 
+			display : inline-block;
+		}
+
+			#menu a /* Contenu des listes */
+			{
+				display : inline-block; /* on change le type d'�l�ment, les liens deviennent des balises de type block */
+				padding : 0; /* aucune marge int�rieure */
+				background : #FFFFFF; /* couleur de fond */        
+				color : #234D7F; /* couleur du texte */
+				text-decoration : none; /* on supprime le style par d�faut des liens (la plupart du temps = soulign�) */
+				width : 90px; /* largeur */
+			}
+
+			#menu a.current /* Contenu des listes */
+			{
+				display : inline-block; /* on change le type d'�l�ment, les liens deviennent des balises de type block */
+				padding : 0; /* aucune marge int�rieure */
+				background : #234D7F; /* couleur de fond */        
+				color : #FFFFFF; /* couleur du texte */
+				text-decoration : none; /* on supprime le style par d�faut des liens (la plupart du temps = soulign�) */
+				width : 90px; /* largeur */
+			}
+
+			#menu a:hover /* Lorsque la souris passe sur un des liens */    
+			{
+				color: #FFFFFF; /* On passe le texte en noir... */ 
+				background: #407CC9; /* ... #234D7F et au contraire, le fond en blanc */
+			}
+
+/* Propri�t�s d'affichage des tabs, menus en onglet soumis � JS (class=tabs) */
+div.tabs{
+	margin : 5px;
+	padding : 5px;
+	border: 1px #234D7F dashed;
+	}
+
+	ul.tabs /* Ensemble tabs */
+	{
+		display: inline-block;
+		font-weight : bold; /* on met le texte en gras */
+		font-family : Arial; /* on utilise Arial */
+		font-size : 12px; /* hauteur du texte : 12 pixels */
+		padding : 0; /* pas de marge int�rieure */
+		margin : 0; /* ni ext�rieure */
+		list-style : none; /* on supprime le style par d�faut de la liste */
+		line-height : 20px; /* on d�finit une hauteur pour chaque �l�ment */
+		text-align : center; /* on centre le texte qui se trouve dans la liste */
+		border-bottom: 1px solid #234D7F;
+	}
+
+	ul.tabs /* Liste */     
+	{
+	}
+
+		li.tabs /* Elements des listes */      
+		{ 
+			display : inline-block;
+		}
+
+			a.tabs /* Contenu des listes */
+			{
+				display : inline-block; /* on change le type d'�l�ment, les liens deviennent des balises de type block */
+				padding : 0; /* aucune marge int�rieure */
+				background : #FFFFFF; /* couleur de fond */        
+				color : #234D7F; /* couleur du texte */
+				text-decoration : none; /* on supprime le style par d�faut des liens (la plupart du temps = soulign�) */
+				width : 90px; /* largeur */
+			}
+
+			a.curr_tabs /* Contenu des listes si courant */
+			{
+				display : inline-block; /* on change le type d'�l�ment, les liens deviennent des balises de type block */
+				padding : 0; /* aucune marge int�rieure */
+				background : #234D7F; /* couleur de fond */        
+				color : #FFFFFF; /* couleur du texte */
+				text-decoration : none; /* on supprime le style par d�faut des liens (la plupart du temps = soulign�) */
+				width : 90px; /* largeur */
+			}
+
+			a.tabs:hover /* Lorsque la souris passe sur un des liens */    
+			{
+				color: #FFFFFF; /* On passe le texte en noir... */ 
+				background: #407CC9; /* ... #234D7F et au contraire, le fond en blanc */
+			}
