@@ -3,6 +3,5 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "lit-element": "^2.4.0"
   }
 }
