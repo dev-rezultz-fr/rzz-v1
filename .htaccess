@@ -1,0 +1,2 @@
+ErrorDocument 404 http://www.rezultz.fr/index.php?m=404
+ErrorDocument 405 http://www.rezultz.fr/index.php?m=405
